@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kylian Martinez</title>
-<meta name="description" content="Kylian Martinez, étudiant en 2e année de prépa intégrée à l'EPITA. Projets en C et Python : IA de jeu, OCR et résolution de grilles.">
+<meta name="description" content="Kylian Martinez, étudiant en 2e année de prépa intégrée à l'EPITA. Projets en C, Python, IA de jeu, OCR et applications iOS.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;700&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -122,6 +122,7 @@
     <a class="me" href="#">Kylian Martinez</a>
     <ul>
       <li><a href="#projets">Projets</a></li>
+      <li><a href="#experience">Expérience</a></li>
       <li><a href="#competences">Compétences</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
@@ -131,7 +132,7 @@
     <div class="grid" id="grid" role="img" aria-label="Grille de mots cachés où l'on trouve KYLIAN, MARTINEZ, PYTHON et EPITA"></div>
     <div class="intro">
       <h1>Kylian Martinez</h1>
-      <p>Étudiant en 2<sup>e</sup> année de prépa intégrée à l'EPITA. J'écris surtout du C et du Python, et ce qui me plaît le plus, c'est de faire réfléchir une machine&nbsp;: des zombies qui chassent un joueur, un programme qui lit une grille et trouve les mots tout seul.</p>
+      <p>Étudiant en 2<sup>e</sup> année de prépa intégrée à l'EPITA (promo 2030). Je code surtout en C et en Python, et ce qui me plaît le plus, c'est de faire réfléchir une machine. Je vise l'intelligence artificielle et le machine learning.</p>
       <p class="found-list" aria-hidden="true">Mots trouvés&nbsp;: <span id="words"></span></p>
       <div class="links">
         <a class="btn primary" href="#projets">Voir mes projets</a>
@@ -147,23 +148,61 @@
     <article class="project">
       <div>
         <h3>Solveur de mots cachés</h3>
-        <div class="status">Projet EPITA, en cours</div>
+        <div class="status">Projet EPITA en équipe de 4, en cours</div>
       </div>
       <div>
-        <p>On donne une photo de grille de mots cachés, le programme la lit et la résout. Il faut repérer la grille dans l'image, découper chaque case, reconnaître la lettre avec un réseau de neurones, puis chercher les mots dans toutes les directions.</p>
-        <p>La grille en haut de cette page est un clin d'œil à ce projet.</p>
-        <ul class="tags"><li>C</li><li>Traitement d'image</li><li>Réseau de neurones</li><li>OCR</li></ul>
+        <p>À partir d'une photo, le programme détecte la grille de mots cachés, découpe chaque lettre, la reconnaît avec un réseau de neurones puis trouve tous les mots. La grille en haut de cette page est un clin d'œil à ce projet.</p>
+        <p>Je m'occupe du début de la chaîne&nbsp;: le chargement de l'image et le passage en niveaux de gris, dont dépend tout le reste. J'ai notamment corrigé un bug où les pixels codés sur 3 octets faussaient les couleurs, en convertissant chaque image en 4 octets par pixel.</p>
+        <ul class="tags"><li>C</li><li>SDL2</li><li>Traitement d'image</li><li>OCR</li></ul>
       </div>
     </article>
 
     <article class="project">
       <div>
         <h3>Survivors</h3>
-        <div class="status">Projet en équipe, terminé</div>
+        <div class="status">Projet de 1<sup>re</sup> année, équipe de 5</div>
       </div>
       <div>
-        <p>Un jeu de survie où les zombies arrivent par vagues de plus en plus dures. Je me suis occupé de leur intelligence artificielle&nbsp;: repérer le joueur, se déplacer vers lui et attaquer. C'était ma première IA de jeu.</p>
-        <ul class="tags"><li>IA de jeu</li><li>Travail en équipe</li></ul>
+        <p>Un jeu 3D coopératif de survie&nbsp;: deux joueurs, un ingénieur qui pose des pièges et un boxeur, affrontent des vagues de zombies plus agressifs la nuit, avec des missions par radio et du crafting de pièges.</p>
+        <p>J'ai développé l'intelligence artificielle des zombies&nbsp;: repérer le joueur, se déplacer vers lui et attaquer. C'était ma première IA de jeu.</p>
+        <ul class="tags"><li>Jeu 3D</li><li>IA de jeu</li><li>Git en équipe</li></ul>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>NeuroTrader</h3>
+        <div class="status">Projet personnel, 2026</div>
+      </div>
+      <div>
+        <p>Une application iOS native pour tester des stratégies de trading. Je l'ai faite seul, en apprenant Swift et SwiftUI dans la documentation, jusqu'au déploiement sur mon iPhone.</p>
+        <ul class="tags"><li>Swift</li><li>SwiftUI</li><li>iOS</li></ul>
+      </div>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>EcoWard</h3>
+        <div class="status">Projet à deux, fin 2025</div>
+      </div>
+      <div>
+        <p>Une application qui récompense le recyclage&nbsp;: chaque bouteille recyclée rapporte des points, échangeables contre des codes promo, avec un classement entre amis. Je me suis occupé de la modélisation, des maquettes de l'interface et de la base de données.</p>
+        <ul class="tags"><li>UI/UX</li><li>Base de données</li></ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="experience" aria-labelledby="experience-titre">
+    <h2 id="experience-titre">Expérience</h2>
+    <article class="project">
+      <div>
+        <h3>Aiven</h3>
+        <div class="status">Stage d'immersion, équipe Solutions Architects</div>
+      </div>
+      <div>
+        <p>Aiven propose des services cloud open source comme PostgreSQL et Kafka. J'ai écrit de petits scripts de données en Python et je les ai intégrés à un exemple d'architecture, en suivant les analyses de scalabilité menées pour de gros clients.</p>
+        <p>J'en retiens qu'il faut savoir expliquer la technique à quelqu'un qui n'est pas informaticien, et l'envie de travailler sur le cloud et la donnée.</p>
+        <ul class="tags"><li>Python</li><li>PostgreSQL</li><li>Cloud</li></ul>
       </div>
     </article>
   </section>
@@ -173,22 +212,23 @@
     <div class="skills">
       <div>
         <h3>Langages</h3>
-        <ul><li>C</li><li>Python</li></ul>
+        <ul><li>C</li><li>Python</li><li>Swift</li><li>Bash</li></ul>
       </div>
       <div>
-        <h3>Ce que j'ai pratiqué</h3>
-        <ul><li>IA de comportement pour un jeu</li><li>Reconnaissance de caractères</li><li>Traitement d'image</li></ul>
+        <h3>Domaines</h3>
+        <ul><li>IA de jeu</li><li>Traitement d'image et OCR</li><li>Algorithmique, graphes et arbres</li><li>Gestion de la mémoire en C</li></ul>
       </div>
       <div>
         <h3>Outils</h3>
-        <ul><li>Git et GitHub</li><li>Linux</li></ul>
+        <ul><li>Git et GitHub</li><li>Linux et Unix</li><li>Valgrind</li><li>Xcode</li></ul>
       </div>
     </div>
   </section>
 
   <section class="about" aria-labelledby="parcours-titre">
     <h2 id="parcours-titre">Parcours</h2>
-    <p><strong>EPITA</strong>, école d'ingénieurs en informatique. Cycle préparatoire intégré, 2<sup>e</sup> année. Je découvre encore les domaines de l'informatique et je garde l'esprit ouvert sur ma spécialisation.</p>
+    <p><strong>EPITA</strong>, école d'ingénieurs en informatique, promo 2030. Cycle préparatoire intégré, 2<sup>e</sup> année. La 1<sup>re</sup> année m'a appris le C, Unix et la gestion de la mémoire. Cette année, c'est Python, les graphes, les arbres et les premiers pas en IA.</p>
+    <p>Mon objectif&nbsp;: me spécialiser en intelligence artificielle et en machine learning.</p>
   </section>
 </div>
 
